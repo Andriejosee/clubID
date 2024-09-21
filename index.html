@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Organization ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images.png" class="logo" alt="Logo">
+        <h1>Northern Bukidnon State College</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-container">
+        <div class="id-card-container">
+            <div class="header">
+                <img src="images.png" class="logo" alt="Logo">
+                <h1>Northern Bukidnon State College</h1>
+            </div>
+            <div class="info">
+                <img src="gwapo-aj.jpg" alt="Profile Image" class="profile-image">
+                <h1 id="display-name"></h1>
+                <h3>Student ID</h3>
+                <h3 id="display-student-id"></h3>
+                <h3>Student Club</h3>
+                <h3 id="display-student-club"></h3>
+                <h3>Address</h3>
+                <h3 id="display-address"></h3>
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="id-card-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" required>
+
+                <label for="student-club">Student club:</label>
+                <input type="text" id="student-club" name="student-club" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <button type="button" onclick="generateCard()">Generate ID Card</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Northern Bukidnon State College. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
